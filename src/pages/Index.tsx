@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Award, Factory, Zap } from 'lucide-react';
+import { ArrowRight, Shield, Factory, Zap } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { ApplicationForm } from '@/components/ApplicationForm';
+import logo from '@/assets/logo.png';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -10,30 +11,24 @@ const Index = () => {
   const stats = [
     { value: '15+', label: t('about.experience') },
     { value: '200+', label: t('about.clients') },
-    { value: '50+', label: t('about.products') },
-    { value: '10+', label: t('about.quality') },
+    { value: '20+', label: t('about.products') },
   ];
 
   const features = [
     {
       icon: Shield,
-      title: 'ISO 9001:2015',
-      description: t('about.quality'),
+      title: t('features.iso'),
+      description: t('features.isoDesc'),
     },
     {
       icon: Factory,
-      title: 'Modern Production',
-      description: t('about.description').slice(0, 60) + '...',
-    },
-    {
-      icon: Award,
-      title: 'Premium Quality',
-      description: t('products.subtitle'),
+      title: t('features.modernProduction'),
+      description: t('features.modernProductionDesc'),
     },
     {
       icon: Zap,
-      title: 'Fast Delivery',
-      description: t('contacts.workHoursValue'),
+      title: t('features.fastDelivery'),
+      description: t('features.fastDeliveryDesc'),
     },
   ];
 
@@ -42,6 +37,7 @@ const Index = () => {
     { key: 'strips', icon: '🔧' },
     { key: 'rods', icon: '⚙️' },
     { key: 'wire', icon: '🔌' },
+    { key: 'foil', icon: '🔖' },
     { key: 'alloys', icon: '🏭' },
     { key: 'custom', icon: '✨' },
   ];
@@ -53,6 +49,10 @@ const Index = () => {
         <div className="absolute inset-0 metal-texture opacity-50" />
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-20">
           <div className="absolute inset-0 bg-gradient-to-l from-primary/30 to-transparent" />
+        </div>
+        
+        <div className="absolute top-6 left-6 z-20">
+          <img src={logo} alt="Logo" className="w-20 h-20 object-contain" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
