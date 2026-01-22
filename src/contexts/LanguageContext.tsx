@@ -32,6 +32,14 @@ const translations: Record<Language, Record<string, string>> = {
     'about.products': 'Видов продукции',
     'about.quality': 'Сертификаты качества',
     
+    // Features
+    'features.iso': 'ISO 9001:2015',
+    'features.isoDesc': 'Международный стандарт качества',
+    'features.modernProduction': 'Современное производство',
+    'features.modernProductionDesc': 'Передовое оборудование и технологии',
+    'features.fastDelivery': 'Быстрая доставка',
+    'features.fastDeliveryDesc': 'Оперативная отгрузка по всему региону',
+    
     // Products
     'products.title': 'Наша продукция',
     'products.subtitle': 'Широкий ассортимент медных изделий',
@@ -43,6 +51,8 @@ const translations: Record<Language, Record<string, string>> = {
     'products.rods.desc': 'Прутки круглого и прямоугольного сечения',
     'products.wire': 'Медная проволока',
     'products.wire.desc': 'Проволока различных диаметров',
+    'products.foil': 'Медная фольга',
+    'products.foil.desc': 'Тонкая медная фольга для различных применений',
     'products.alloys': 'Медные сплавы',
     'products.alloys.desc': 'Бронза, латунь и специальные сплавы',
     'products.custom': 'Под заказ',
@@ -107,6 +117,14 @@ const translations: Record<Language, Record<string, string>> = {
     'about.products': 'Product Types',
     'about.quality': 'Quality Certificates',
     
+    // Features
+    'features.iso': 'ISO 9001:2015',
+    'features.isoDesc': 'International quality standard',
+    'features.modernProduction': 'Modern Production',
+    'features.modernProductionDesc': 'Advanced equipment and technologies',
+    'features.fastDelivery': 'Fast Delivery',
+    'features.fastDeliveryDesc': 'Prompt shipment across the region',
+    
     // Products
     'products.title': 'Our Products',
     'products.subtitle': 'Wide Range of Copper Products',
@@ -118,6 +136,8 @@ const translations: Record<Language, Record<string, string>> = {
     'products.rods.desc': 'Round and rectangular section rods',
     'products.wire': 'Copper Wire',
     'products.wire.desc': 'Wire of various diameters',
+    'products.foil': 'Copper Foil',
+    'products.foil.desc': 'Thin copper foil for various applications',
     'products.alloys': 'Copper Alloys',
     'products.alloys.desc': 'Bronze, brass and special alloys',
     'products.custom': 'Custom Orders',
@@ -182,6 +202,14 @@ const translations: Record<Language, Record<string, string>> = {
     'about.products': "Mahsulot turlari",
     'about.quality': 'Sifat sertifikatlari',
     
+    // Features
+    'features.iso': 'ISO 9001:2015',
+    'features.isoDesc': 'Xalqaro sifat standarti',
+    'features.modernProduction': 'Zamonaviy ishlab chiqarish',
+    'features.modernProductionDesc': "Ilg'or uskunalar va texnologiyalar",
+    'features.fastDelivery': 'Tezkor yetkazib berish',
+    'features.fastDeliveryDesc': "Mintaqa bo'ylab tezkor jo'natish",
+    
     // Products
     'products.title': 'Bizning mahsulotlar',
     'products.subtitle': 'Mis mahsulotlarining keng assortimenti',
@@ -193,6 +221,8 @@ const translations: Record<Language, Record<string, string>> = {
     'products.rods.desc': "Dumaloq va to'rtburchak kesimli tayoqchalar",
     'products.wire': 'Mis sim',
     'products.wire.desc': "Turli diametrli simlar",
+    'products.foil': 'Mis folga',
+    'products.foil.desc': "Turli qo'llanishlar uchun yupqa mis folga",
     'products.alloys': 'Mis qotishmalari',
     'products.alloys.desc': "Bronza, latun va maxsus qotishmalar",
     'products.custom': 'Buyurtma asosida',
