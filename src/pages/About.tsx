@@ -51,10 +51,6 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                <Building2 className="w-4 h-4" />
-                Since 2009
-              </div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
                 {t('about.subtitle')}
               </h2>
