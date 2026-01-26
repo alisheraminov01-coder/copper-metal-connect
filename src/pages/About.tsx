@@ -1,5 +1,6 @@
-import { Building2, Users, Target, Award, CheckCircle } from 'lucide-react';
+import { Users, Target, Award, CheckCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import copperProductionImg from '@/assets/copper-production.jpg';
 
 const About = () => {
   const { t } = useLanguage();
@@ -74,29 +75,23 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">{t('about.clients')}</div>
                 </div>
                 <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-4xl font-heading font-bold text-primary mb-2">50+</div>
+                  <div className="text-4xl font-heading font-bold text-primary mb-2">20+</div>
                   <div className="text-sm text-muted-foreground">{t('about.products')}</div>
                 </div>
                 <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-4xl font-heading font-bold text-primary mb-2">10+</div>
+                  <div className="text-lg font-heading font-bold text-primary mb-2">{t('about.hasCertificates')}</div>
                   <div className="text-sm text-muted-foreground">{t('about.quality')}</div>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl gradient-copper p-1 shadow-copper">
-                <div className="w-full h-full rounded-xl bg-secondary flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-24 h-24 mx-auto mb-6 rounded-2xl gradient-shine flex items-center justify-center">
-                      <span className="text-5xl font-heading font-bold text-secondary">Cu</span>
-                    </div>
-                    <h3 className="text-2xl font-heading font-bold text-primary-foreground mb-2">
-                      COPPER METAL
-                    </h3>
-                    <p className="text-copper-300">Premium Quality Since 2009</p>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-copper">
+                <img 
+                  src={copperProductionImg} 
+                  alt="Copper production facility" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

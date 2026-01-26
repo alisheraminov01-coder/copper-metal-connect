@@ -31,6 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.clients': 'Клиентов',
     'about.products': 'Видов продукции',
     'about.quality': 'Сертификаты качества',
+    'about.hasCertificates': 'Есть',
     
     // Features
     'features.iso': 'ISO 9001:2015',
@@ -116,6 +117,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.clients': 'Clients',
     'about.products': 'Product Types',
     'about.quality': 'Quality Certificates',
+    'about.hasCertificates': 'Available',
     
     // Features
     'features.iso': 'ISO 9001:2015',
@@ -201,6 +203,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.clients': 'Mijozlar',
     'about.products': "Mahsulot turlari",
     'about.quality': 'Sifat sertifikatlari',
+    'about.hasCertificates': 'Mavjud',
     
     // Features
     'features.iso': 'ISO 9001:2015',
