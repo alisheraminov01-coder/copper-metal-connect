@@ -27,16 +27,19 @@ const Index = () => {
     },
     {
       icon: Zap,
-      title: t('features.fastDelivery'),
-      description: t('features.fastDeliveryDesc'),
+      title: t('features.delivery'),
+      description: t('features.deliveryDesc'),
+    },
+    {
+      icon: Shield,
+      title: t('features.localCertificate'),
+      description: t('features.localCertificateDesc'),
     },
   ];
 
   const products = [
     { key: 'sheets', icon: '📄' },
     { key: 'strips', icon: '🔧' },
-    { key: 'rods', icon: '⚙️' },
-    { key: 'wire', icon: '🔌' },
     { key: 'foil', icon: '🔖' },
     { key: 'alloys', icon: '🏭' },
     { key: 'custom', icon: '✨' },
