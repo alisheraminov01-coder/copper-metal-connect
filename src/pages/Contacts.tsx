@@ -9,14 +9,14 @@ const Contacts = () => {
     {
       icon: MapPin,
       title: t('contacts.address'),
-      value: t('contacts.addressValue'),
-      link: 'https://maps.google.com/?q=Tashkent,Uzbekistan',
+      value: 'Узбекистан, Ташкентская область, г. Бекабад, ул. Сирдаре, 338',
+      link: 'https://maps.google.com/?q=Bekabad,Uzbekistan',
     },
     {
       icon: Phone,
       title: t('contacts.phone'),
-      value: '+998 71 234 56 78',
-      link: 'tel:+998712345678',
+      value: '+998 90 956 22 41',
+      link: 'tel:+998909562241',
     },
     {
       icon: Mail,
@@ -27,7 +27,7 @@ const Contacts = () => {
     {
       icon: Clock,
       title: t('contacts.workHours'),
-      value: t('contacts.workHoursValue'),
+      value: 'Пн-Пт: 8:00 - 17:00',
       link: null,
     },
   ];
