@@ -9,38 +9,38 @@ const Vacancies = () => {
   const vacancies = [
     {
       key: 'engineer',
-      salary: '3,000,000 - 5,000,000 UZS',
-      type: 'Full-time',
-      location: 'Tashkent',
+      salary: '3 000 000 - 5 000 000 сум',
+      type: 'Полная занятость',
+      location: 'Бекабад',
       requirements: [
-        'Higher technical education',
-        '3+ years of experience',
-        'Knowledge of metallurgical processes',
-        'English language skills',
+        'Высшее техническое образование',
+        'Опыт работы от 3 лет',
+        'Знание металлургических процессов',
+        'Знание английского языка',
       ],
     },
     {
       key: 'operator',
-      salary: '2,000,000 - 3,500,000 UZS',
-      type: 'Full-time / Shift',
-      location: 'Tashkent',
+      salary: '2 000 000 - 3 500 000 сум',
+      type: 'Полная занятость / Сменный график',
+      location: 'Бекабад',
       requirements: [
-        'Technical secondary education',
-        'Experience with industrial equipment',
-        'Physical fitness',
-        'Team player',
+        'Среднее техническое образование',
+        'Опыт работы с промышленным оборудованием',
+        'Физическая выносливость',
+        'Умение работать в команде',
       ],
     },
     {
       key: 'manager',
-      salary: '4,000,000 - 8,000,000 UZS',
-      type: 'Full-time',
-      location: 'Tashkent',
+      salary: '4 000 000 - 8 000 000 сум',
+      type: 'Полная занятость',
+      location: 'Бекабад',
       requirements: [
-        'Higher education (economics/management)',
-        '2+ years in B2B sales',
-        'Excellent communication skills',
-        'Russian and English languages',
+        'Высшее образование (экономика/менеджмент)',
+        'Опыт в B2B продажах от 2 лет',
+        'Отличные коммуникативные навыки',
+        'Знание русского и английского языков',
       ],
     },
   ];
@@ -97,7 +97,7 @@ const Vacancies = () => {
                     </div>
 
                     <div className="mb-6">
-                      <h4 className="text-sm font-semibold text-foreground mb-3">Requirements:</h4>
+                      <h4 className="text-sm font-semibold text-foreground mb-3">Требования:</h4>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {vacancy.requirements.map((req, i) => (
                           <li key={i} className="text-sm text-muted-foreground flex items-center gap-2">
@@ -127,31 +127,6 @@ const Vacancies = () => {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
-            Why Work With Us?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              { title: 'Competitive Salary', desc: 'Above-market compensation packages' },
-              { title: 'Career Growth', desc: 'Professional development opportunities' },
-              { title: 'Modern Workplace', desc: 'State-of-the-art equipment and facilities' },
-            ].map((benefit, index) => (
-              <div key={index} className="p-6 rounded-xl bg-card border border-border text-center">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full gradient-copper flex items-center justify-center">
-                  <span className="text-xl">✓</span>
-                </div>
-                <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
-                  {benefit.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
