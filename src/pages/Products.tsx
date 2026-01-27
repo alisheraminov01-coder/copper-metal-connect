@@ -10,32 +10,27 @@ const Products = () => {
     {
       key: 'sheets',
       icon: '📄',
-      specs: ['Thickness: 0.1 - 10 mm', 'Width: up to 1000 mm', 'M1, M2, M3 grades'],
+      specs: ['Толщина: 0.1 - 10 мм', 'Ширина: до 1000 мм', 'Марки М1, М2, М3'],
     },
     {
       key: 'strips',
       icon: '🔧',
-      specs: ['Thickness: 0.05 - 3 mm', 'Width: 5 - 400 mm', 'Coil or cut length'],
+      specs: ['Толщина: 0.05 - 3 мм', 'Ширина: 5 - 400 мм', 'В рулонах или листах'],
     },
     {
       key: 'rods',
       icon: '⚙️',
-      specs: ['Diameter: 3 - 100 mm', 'Length: up to 6 m', 'Round and hexagonal'],
-    },
-    {
-      key: 'wire',
-      icon: '🔌',
-      specs: ['Diameter: 0.1 - 12 mm', 'Soft and hard temper', 'Various coatings'],
+      specs: ['Диаметр: 3 - 100 мм', 'Длина: до 6 м', 'Круглые и шестигранные'],
     },
     {
       key: 'alloys',
       icon: '🏭',
-      specs: ['Bronze (CuSn, CuAl)', 'Brass (CuZn)', 'Cupronickel (CuNi)'],
+      specs: ['Латунь (CuZn)', 'Мельхиор (CuNi)', 'Специальные сплавы'],
     },
     {
       key: 'custom',
       icon: '✨',
-      specs: ['Custom dimensions', 'Special alloys', 'Heat treatment'],
+      specs: ['Нестандартные размеры', 'Специальные сплавы', 'Термообработка'],
     },
   ];
 
@@ -98,29 +93,29 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
-              Production Standards
+              Стандарты производства
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-6 rounded-xl bg-card border border-border">
                 <h3 className="text-lg font-heading font-semibold text-foreground mb-4">
-                  Copper Grades
+                  Марки меди
                 </h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• M0 - oxygen-free copper (99.99%)</li>
-                  <li>• M1 - electrolytic copper (99.9%)</li>
-                  <li>• M2 - deoxidized copper (99.7%)</li>
-                  <li>• M3 - technical copper (99.5%)</li>
+                  <li>• М0 - бескислородная медь (99.99%)</li>
+                  <li>• М1 - электролитическая медь (99.9%)</li>
+                  <li>• М2 - раскисленная медь (99.7%)</li>
+                  <li>• М3 - техническая медь (99.5%)</li>
                 </ul>
               </div>
               <div className="p-6 rounded-xl bg-card border border-border">
                 <h3 className="text-lg font-heading font-semibold text-foreground mb-4">
-                  Quality Control
+                  Контроль качества
                 </h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Chemical composition analysis</li>
-                  <li>• Mechanical properties testing</li>
-                  <li>• Dimensional inspection</li>
-                  <li>• Surface quality control</li>
+                  <li>• Анализ химического состава</li>
+                  <li>• Испытания механических свойств</li>
+                  <li>• Контроль размеров</li>
+                  <li>• Контроль качества поверхности</li>
                 </ul>
               </div>
             </div>
@@ -136,7 +131,7 @@ const Products = () => {
             {t('products.custom.desc')}
           </h2>
           <p className="text-lg text-copper-300 mb-8 max-w-2xl mx-auto">
-            Contact us for custom orders, special alloys, and specific dimensions
+            Свяжитесь с нами для заказа нестандартных размеров и специальных сплавов
           </p>
           <Link to="/contacts">
             <Button size="lg" className="gradient-copper text-secondary font-semibold text-lg px-8 shadow-copper">
