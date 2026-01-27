@@ -38,8 +38,10 @@ const translations: Record<Language, Record<string, string>> = {
     'features.isoDesc': 'Международный стандарт качества',
     'features.modernProduction': 'Современное производство',
     'features.modernProductionDesc': 'Передовое оборудование и технологии',
-    'features.fastDelivery': 'Быстрая доставка',
-    'features.fastDeliveryDesc': 'Оперативная отгрузка по всему региону',
+    'features.delivery': 'Доставка',
+    'features.deliveryDesc': 'Оперативная отгрузка по всему региону',
+    'features.localCertificate': 'Сертификат местного производителя',
+    'features.localCertificateDesc': 'Подтверждённое качество отечественного производства',
     
     // Products
     'products.title': 'Наша продукция',
@@ -122,8 +124,10 @@ const translations: Record<Language, Record<string, string>> = {
     'features.isoDesc': 'International quality standard',
     'features.modernProduction': 'Modern Production',
     'features.modernProductionDesc': 'Advanced equipment and technologies',
-    'features.fastDelivery': 'Fast Delivery',
-    'features.fastDeliveryDesc': 'Prompt shipment across the region',
+    'features.delivery': 'Delivery',
+    'features.deliveryDesc': 'Prompt shipment across the region',
+    'features.localCertificate': 'Local Manufacturer Certificate',
+    'features.localCertificateDesc': 'Certified domestic production quality',
     
     // Products
     'products.title': 'Our Products',
@@ -206,8 +210,10 @@ const translations: Record<Language, Record<string, string>> = {
     'features.isoDesc': 'Xalqaro sifat standarti',
     'features.modernProduction': 'Zamonaviy ishlab chiqarish',
     'features.modernProductionDesc': "Ilg'or uskunalar va texnologiyalar",
-    'features.fastDelivery': 'Tezkor yetkazib berish',
-    'features.fastDeliveryDesc': "Mintaqa bo'ylab tezkor jo'natish",
+    'features.delivery': 'Yetkazib berish',
+    'features.deliveryDesc': "Mintaqa bo'ylab tezkor jo'natish",
+    'features.localCertificate': 'Mahalliy ishlab chiqaruvchi sertifikati',
+    'features.localCertificateDesc': 'Tasdiqlangan mahalliy ishlab chiqarish sifati',
     
     // Products
     'products.title': 'Bizning mahsulotlar',
