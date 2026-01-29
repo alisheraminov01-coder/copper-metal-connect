@@ -30,6 +30,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.experience': 'Лет опыта',
     'about.clients': 'Клиентов',
     'about.products': 'Видов продукции',
+    'about.turnover': 'Тонн оборота в год',
     'about.quality': 'Сертификаты качества',
     'about.hasCertificates': 'Есть',
     
@@ -79,7 +80,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contacts.phone': 'Телефон',
     'contacts.email': 'Электронная почта',
     'contacts.workHours': 'Режим работы',
-    'contacts.workHoursValue': 'Пн-Пт: 9:00 - 18:00',
+    'contacts.workHoursValue': 'Пн-Пт: 8:00 - 17:00',
     
     // Form
     'form.title': 'Оставить заявку',
@@ -116,6 +117,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.experience': 'Years of Experience',
     'about.clients': 'Clients',
     'about.products': 'Product Types',
+    'about.turnover': 'Tons Turnover per Year',
     'about.quality': 'Quality Certificates',
     'about.hasCertificates': 'Available',
     
@@ -165,7 +167,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contacts.phone': 'Phone',
     'contacts.email': 'Email',
     'contacts.workHours': 'Working Hours',
-    'contacts.workHoursValue': 'Mon-Fri: 9:00 AM - 6:00 PM',
+    'contacts.workHoursValue': 'Mon-Fri: 8:00 AM - 5:00 PM',
     
     // Form
     'form.title': 'Request a Quote',
@@ -202,6 +204,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.experience': 'Yillik tajriba',
     'about.clients': 'Mijozlar',
     'about.products': "Mahsulot turlari",
+    'about.turnover': "Yillik tovar aylanmasi tonnalarda",
     'about.quality': 'Sifat sertifikatlari',
     'about.hasCertificates': 'Mavjud',
     
@@ -251,7 +254,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contacts.phone': 'Telefon',
     'contacts.email': 'Elektron pochta',
     'contacts.workHours': 'Ish vaqti',
-    'contacts.workHoursValue': 'Du-Ju: 9:00 - 18:00',
+    'contacts.workHoursValue': 'Du-Ju: 8:00 - 17:00',
     
     // Form
     'form.title': 'Ariza qoldirish',

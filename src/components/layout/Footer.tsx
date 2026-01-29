@@ -71,12 +71,12 @@ export const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-copper-300">{t('contacts.addressValue')}</span>
+                <span className="text-sm text-copper-300">Узбекистан, Ташкентская область, г. Бекабад, ул. Сирдаре, 338</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+998712345678" className="text-sm text-copper-300 hover:text-primary transition-colors">
-                  +998 71 234 56 78
+                <a href="tel:+998909562241" className="text-sm text-copper-300 hover:text-primary transition-colors">
+                  +998 90 956 22 41
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -87,7 +87,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-sm text-copper-300">{t('contacts.workHoursValue')}</span>
+                <span className="text-sm text-copper-300">Пн-Пт: 8:00 - 17:00</span>
               </div>
             </div>
           </div>
