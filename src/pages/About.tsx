@@ -8,26 +8,26 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Quality First',
-      description: 'Every product meets the highest international standards',
+      title: 'Качество прежде всего',
+      description: 'Каждый продукт соответствует высочайшим международным стандартам',
     },
     {
       icon: Users,
-      title: 'Customer Focus',
-      description: 'Building long-term partnerships with our clients',
+      title: 'Ориентация на клиента',
+      description: 'Построение долгосрочных партнёрских отношений с нашими клиентами',
     },
     {
       icon: Award,
-      title: 'Innovation',
-      description: 'Continuous improvement of our production technologies',
+      title: 'Инновации',
+      description: 'Постоянное совершенствование наших производственных технологий',
     },
   ];
 
   const certifications = [
-    'ISO 9001:2015 Quality Management',
-    'ISO 14001:2015 Environmental Management',
-    'OHSAS 18001 Occupational Safety',
-    'GOST Standards Compliance',
+    'ISO 9001:2015 Система менеджмента качества',
+    'ISO 14001:2015 Экологический менеджмент',
+    'OHSAS 18001 Охрана труда',
+    'Соответствие стандартам ГОСТ',
   ];
 
   return (
@@ -59,9 +59,9 @@ const About = () => {
                 {t('about.description')}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Our state-of-the-art facility spans over 10,000 square meters and is equipped with 
-                the latest cold rolling mills, annealing furnaces, and quality control equipment 
-                from leading European manufacturers.
+                Наше современное производство занимает площадь более 10 000 квадратных метров и оснащено 
+                новейшими станами холодной прокатки, отжиговыми печами и оборудованием контроля качества 
+                от ведущих европейских производителей.
               </p>
 
               {/* Stats */}
@@ -102,7 +102,7 @@ const About = () => {
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
-            Our Values
+            Наши ценности
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
@@ -131,7 +131,7 @@ const About = () => {
               {t('about.quality')}
             </h2>
             <p className="text-lg text-muted-foreground mb-12">
-              Our commitment to quality is backed by internationally recognized certifications
+              Наша приверженность качеству подтверждена международно признанными сертификатами
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (
