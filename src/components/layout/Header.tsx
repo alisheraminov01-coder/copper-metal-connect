@@ -41,7 +41,6 @@ export const Header = () => {
             <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
             <div className="hidden sm:block">
               <h1 className="text-lg font-heading font-bold text-primary-foreground">БЕКОБОД РМИЧК</h1>
-              <p className="text-xs text-copper-300">Uzbekistan</p>
             </div>
           </Link>
 
