@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import logo from '@/assets/logo.png';
 
 const languages: { code: Language; label: string; flag: string }[] = [
   { code: 'ru', label: 'Русский', flag: '🇷🇺' },
@@ -37,11 +38,9 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-lg gradient-copper flex items-center justify-center shadow-copper">
-              <span className="text-2xl font-heading font-bold text-secondary">Cu</span>
-            </div>
+            <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
             <div className="hidden sm:block">
-              <h1 className="text-lg font-heading font-bold text-primary-foreground">COPPER METAL</h1>
+              <h1 className="text-lg font-heading font-bold text-primary-foreground">БЕКОБОД РМИЧК</h1>
               <p className="text-xs text-copper-300">Uzbekistan</p>
             </div>
           </Link>
