@@ -55,9 +55,6 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-l from-primary/30 to-transparent" />
         </div>
         
-        <div className="absolute top-6 left-6 z-20">
-          <img src={logo} alt="Logo" className="w-20 h-20 object-contain" />
-        </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl animate-slide-up">
