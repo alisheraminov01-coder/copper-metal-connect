@@ -32,7 +32,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.products': 'Видов продукции',
     'about.turnover': 'Тонн оборота в год',
     'about.quality': 'Сертификаты качества',
-    'about.hasCertificates': 'Есть',
+    'about.hasCertificates': 'ИМЕЮТСЯ',
     
     // Features
     'features.iso': 'ISO 9001:2015',
