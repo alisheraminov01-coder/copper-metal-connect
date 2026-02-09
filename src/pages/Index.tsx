@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Factory, Zap, Sparkles } from 'lucide-react';
+import { ArrowRight, Shield, Factory, Zap, Sparkles, Layers, Ribbon, ScrollText, Cable, Cog, Wand2 } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -39,11 +39,11 @@ const Index = () => {
   ];
 
   const products = [
-    { key: 'sheets', icon: '📄' },
-    { key: 'strips', icon: '🔧' },
-    { key: 'foil', icon: '🔖' },
-    { key: 'alloys', icon: '🏭' },
-    { key: 'custom', icon: '✨' },
+    { key: 'sheets', icon: Layers },
+    { key: 'strips', icon: Ribbon },
+    { key: 'foil', icon: ScrollText },
+    { key: 'alloys', icon: Cog },
+    { key: 'custom', icon: Wand2 },
   ];
 
   const containerVariants: Variants = {
@@ -334,11 +334,11 @@ const Index = () => {
                 >
                   <div className="flex items-start gap-4">
                     <motion.div 
-                      className="text-4xl"
-                      whileHover={{ scale: 1.2, rotate: 10 }}
+                      className="w-14 h-14 rounded-xl gradient-copper flex items-center justify-center shadow-copper shrink-0"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
                       transition={{ type: "spring", stiffness: 300 }}
                     >
-                      {product.icon}
+                      <product.icon className="w-7 h-7 text-secondary" />
                     </motion.div>
                     <div>
                       <h3 className="text-lg font-heading font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">

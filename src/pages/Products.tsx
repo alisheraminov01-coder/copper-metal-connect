@@ -1,40 +1,40 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Layers, Ribbon, ScrollText, Cable, Cog, Wand2, LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
 const Products = () => {
   const { t } = useLanguage();
 
-  const products = [
+  const products: { key: string; icon: LucideIcon; specs: string[] }[] = [
     {
       key: 'sheets',
-      icon: '📄',
+      icon: Layers,
       specs: ['Толщина: 0,5 - 16 мм', 'Ширина: до 1000 мм', 'Марки М1, М2, М3'],
     },
     {
       key: 'strips',
-      icon: '🔧',
+      icon: Ribbon,
       specs: ['Толщина: 0,035 - 16 мм', 'Ширина: 10 - 450 мм', 'В рулонах или листах'],
     },
     {
       key: 'foil',
-      icon: '📃',
+      icon: ScrollText,
       specs: ['Толщина: от 0,01 мм', 'Высокая пластичность', 'Для электроники и упаковки'],
     },
     {
       key: 'copperStrips',
-      icon: '🔩',
+      icon: Cable,
       specs: ['Толщина: 0,1 - 10 мм', 'Ширина: 20 - 600 мм', 'Высокая электропроводность'],
     },
     {
       key: 'alloys',
-      icon: '🏭',
+      icon: Cog,
       specs: ['Латунь (CuZn)', 'Специальные сплавы'],
     },
     {
       key: 'custom',
-      icon: '✨',
+      icon: Wand2,
       specs: ['Нестандартные размеры', 'Специальные сплавы', 'Термообработка'],
     },
   ];
@@ -66,7 +66,9 @@ const Products = () => {
                 className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-5xl mb-6">{product.icon}</div>
+                <div className="w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
+                  <product.icon className="w-8 h-8 text-secondary" />
+                </div>
                 <h3 className="text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(`products.${product.key}`)}
                 </h3>
