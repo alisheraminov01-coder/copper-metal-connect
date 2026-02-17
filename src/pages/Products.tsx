@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Layers, Ribbon, ScrollText, Cable, Cog, Wand2, LucideIcon } from 'lucide-react';
+import { ArrowRight, Layers, Ribbon, ScrollText, LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
@@ -23,19 +23,19 @@ const Products = () => {
       specs: ['Толщина: от 0,01 мм', 'Высокая пластичность', 'Для электроники и упаковки'],
     },
     {
-      key: 'copperStrips',
-      icon: Cable,
-      specs: ['Толщина: 0,1 - 10 мм', 'Ширина: 20 - 600 мм', 'Высокая электропроводность'],
+      key: 'brassSheets',
+      icon: Layers,
+      specs: ['Латунные листы различной толщины', 'Для промышленного применения'],
     },
     {
-      key: 'alloys',
-      icon: Cog,
-      specs: ['Латунь (CuZn)', 'Специальные сплавы'],
+      key: 'brassStrips',
+      icon: Ribbon,
+      specs: ['Латунные ленты для промышленности', 'В рулонах или листах'],
     },
     {
-      key: 'custom',
-      icon: Wand2,
-      specs: ['Нестандартные размеры', 'Специальные сплавы', 'Термообработка'],
+      key: 'brassFoil',
+      icon: ScrollText,
+      specs: ['Тонкая латунная фольга', 'Для различных применений'],
     },
   ];
 
