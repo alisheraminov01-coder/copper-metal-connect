@@ -61,6 +61,12 @@ const translations: Record<Language, Record<string, string>> = {
     'products.alloys.desc': 'Латунь и специальные сплавы',
     'products.custom': 'Под заказ',
     'products.custom.desc': 'Изделия по индивидуальным требованиям',
+    'products.brassSheets': 'Латунный лист',
+    'products.brassSheets.desc': 'Латунные листы различной толщины',
+    'products.brassStrips': 'Латунные ленты',
+    'products.brassStrips.desc': 'Ленты из латуни для промышленности',
+    'products.brassFoil': 'Латунная фольга',
+    'products.brassFoil.desc': 'Тонкая латунная фольга для различных применений',
     
     // Vacancies
     'vacancies.title': 'Вакансии',
@@ -150,6 +156,12 @@ const translations: Record<Language, Record<string, string>> = {
     'products.alloys.desc': 'Brass and special alloys',
     'products.custom': 'Custom Orders',
     'products.custom.desc': 'Products to individual requirements',
+    'products.brassSheets': 'Brass Sheets',
+    'products.brassSheets.desc': 'Brass sheets of various thicknesses',
+    'products.brassStrips': 'Brass Strips',
+    'products.brassStrips.desc': 'Brass strips for industry',
+    'products.brassFoil': 'Brass Foil',
+    'products.brassFoil.desc': 'Thin brass foil for various applications',
     
     // Vacancies
     'vacancies.title': 'Careers',
@@ -239,6 +251,12 @@ const translations: Record<Language, Record<string, string>> = {
     'products.alloys.desc': "Latun va maxsus qotishmalar",
     'products.custom': 'Buyurtma asosida',
     'products.custom.desc': "Individual talablarga ko'ra mahsulotlar",
+    'products.brassSheets': 'Latun varaqlar',
+    'products.brassSheets.desc': 'Turli qalinlikdagi latun varaqlar',
+    'products.brassStrips': 'Latun lentalar',
+    'products.brassStrips.desc': 'Sanoat uchun latun lentalar',
+    'products.brassFoil': 'Latun folga',
+    'products.brassFoil.desc': "Turli qo'llanishlar uchun yupqa latun folga",
     
     // Vacancies
     'vacancies.title': 'Vakansiyalar',

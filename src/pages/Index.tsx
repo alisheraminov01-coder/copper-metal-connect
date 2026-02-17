@@ -10,7 +10,7 @@ const Index = () => {
 
   const stats = [
     { value: '15+', label: t('about.experience') },
-    { value: '200+', label: t('about.clients') },
+    { value: '1500+', label: t('about.clients') },
     { value: '20+', label: t('about.products') },
     { value: '3600', label: t('about.turnover') },
   ];
@@ -42,8 +42,9 @@ const Index = () => {
     { key: 'sheets', icon: Layers },
     { key: 'strips', icon: Ribbon },
     { key: 'foil', icon: ScrollText },
-    { key: 'alloys', icon: Cog },
-    { key: 'custom', icon: Wand2 },
+    { key: 'brassSheets', icon: Layers },
+    { key: 'brassStrips', icon: Ribbon },
+    { key: 'brassFoil', icon: ScrollText },
   ];
 
   const containerVariants: Variants = {
