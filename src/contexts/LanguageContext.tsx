@@ -49,7 +49,7 @@ const translations: Record<Language, Record<string, string>> = {
     'products.subtitle': 'Широкий ассортимент медных изделий',
     'products.sheets': 'Медные листы',
     'products.sheets.desc': 'Холоднокатаные листы из меди различной толщины',
-    'products.strips': 'Медные ленты',
+    'products.strips': 'Медная лента',
     'products.strips.desc': 'Ленты из меди и сплавов для промышленности',
     'products.rods': 'Медные прутки',
     'products.rods.desc': 'Прутки круглого и прямоугольного сечения',
