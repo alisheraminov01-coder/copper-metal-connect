@@ -71,7 +71,7 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">{t('about.experience')}</div>
                 </div>
                 <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-4xl font-heading font-bold text-primary mb-2">200+</div>
+                  <div className="text-4xl font-heading font-bold text-primary mb-2">1500+</div>
                   <div className="text-sm text-muted-foreground">{t('about.clients')}</div>
                 </div>
                 <div className="p-6 rounded-xl bg-muted">
