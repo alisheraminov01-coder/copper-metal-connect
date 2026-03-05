@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import brassStripsBg from '@/assets/brass-strips-bg.jpg';
 import copperStripsBg from '@/assets/copper-strips-bg.jpg';
+import brassSheetsBg from '@/assets/brass-sheets-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
@@ -72,6 +73,12 @@ const Products = () => {
                   <div
                     className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${brassStripsBg})` }}
+                  />
+                )}
+                {product.key === 'brassSheets' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${brassSheetsBg})` }}
                   />
                 )}
                 {product.key === 'strips' && (
