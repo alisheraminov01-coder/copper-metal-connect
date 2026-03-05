@@ -90,7 +90,7 @@ const Products = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contacts">
+                <Link to="/contacts" className="relative z-10 block">
                   <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
                     {t('hero.cta')}
                     <ArrowRight className="ml-2 w-4 h-4" />
