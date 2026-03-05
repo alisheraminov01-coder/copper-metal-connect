@@ -75,6 +75,12 @@ const Products = () => {
                     style={{ backgroundImage: `url(${brassStripsBg})` }}
                   />
                 )}
+                {product.key === 'brassSheets' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${brassSheetsBg})` }}
+                  />
+                )}
                 {product.key === 'strips' && (
                   <div
                     className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
