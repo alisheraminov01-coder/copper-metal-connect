@@ -6,6 +6,7 @@ import brassStripsBg from '@/assets/brass-strips-bg.jpg';
 import copperStripsBg from '@/assets/copper-strips-bg.jpg';
 import brassSheetsBg from '@/assets/brass-sheets-bg.jpg';
 import brassFoilBg from '@/assets/brass-foil-bg.jpg';
+import copperSheetsBg from '@/assets/copper-sheets-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
@@ -70,6 +71,12 @@ const Products = () => {
                 className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                {product.key === 'sheets' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${copperSheetsBg})` }}
+                  />
+                )}
                 {product.key === 'brassStrips' && (
                   <div
                     className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
