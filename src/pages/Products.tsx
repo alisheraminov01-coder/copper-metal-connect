@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import brassStripsBg from '@/assets/brass-strips-bg.jpg';
 import copperStripsBg from '@/assets/copper-strips-bg.jpg';
+import brassSheetsBg from '@/assets/brass-sheets-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
