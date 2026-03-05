@@ -76,7 +76,7 @@ const Products = () => {
                 <div className="relative z-10 w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
                   <product.icon className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h3 className="relative z-10 text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(`products.${product.key}`)}
                 </h3>
                 <p className="text-muted-foreground mb-6">
