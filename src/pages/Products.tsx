@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Layers, Ribbon, ScrollText, LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import brassStripsBg from '@/assets/brass-strips-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
