@@ -64,10 +64,16 @@ const Products = () => {
             {products.map((product, index) => (
               <div
                 key={product.key}
-                className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in"
+                className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
+                {product.key === 'brassStrips' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${brassStripsBg})` }}
+                  />
+                )}
+                <div className="relative z-10 w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
                   <product.icon className="w-8 h-8 text-secondary" />
                 </div>
                 <h3 className="text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
