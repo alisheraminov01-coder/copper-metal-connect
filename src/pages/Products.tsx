@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Layers, Ribbon, ScrollText, LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import brassStripsBg from '@/assets/brass-strips-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
@@ -63,19 +64,25 @@ const Products = () => {
             {products.map((product, index) => (
               <div
                 key={product.key}
-                className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in"
+                className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
+                {product.key === 'brassStrips' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${brassStripsBg})` }}
+                  />
+                )}
+                <div className="relative z-10 w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
                   <product.icon className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <h3 className="relative z-10 text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(`products.${product.key}`)}
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="relative z-10 text-muted-foreground mb-6">
                   {t(`products.${product.key}.desc`)}
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="relative z-10 space-y-2 mb-6">
                   {product.specs.map((spec, i) => (
                     <li key={i} className="text-sm text-muted-foreground flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -83,7 +90,7 @@ const Products = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contacts">
+                <Link to="/contacts" className="relative z-10 block">
                   <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
                     {t('hero.cta')}
                     <ArrowRight className="ml-2 w-4 h-4" />
