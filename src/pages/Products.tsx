@@ -82,7 +82,7 @@ const Products = () => {
                 <p className="relative z-10 text-muted-foreground mb-6">
                   {t(`products.${product.key}.desc`)}
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="relative z-10 space-y-2 mb-6">
                   {product.specs.map((spec, i) => (
                     <li key={i} className="text-sm text-muted-foreground flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary" />
