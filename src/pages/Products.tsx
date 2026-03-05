@@ -3,6 +3,7 @@ import { ArrowRight, Layers, Ribbon, ScrollText, LucideIcon } from 'lucide-react
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import brassStripsBg from '@/assets/brass-strips-bg.jpg';
+import copperStripsBg from '@/assets/copper-strips-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
@@ -71,6 +72,12 @@ const Products = () => {
                   <div
                     className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${brassStripsBg})` }}
+                  />
+                )}
+                {product.key === 'strips' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${copperStripsBg})` }}
                   />
                 )}
                 <div className="relative z-10 w-16 h-16 rounded-xl gradient-copper flex items-center justify-center mb-6 shadow-copper group-hover:scale-110 transition-transform duration-300">
