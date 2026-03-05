@@ -79,7 +79,7 @@ const Products = () => {
                 <h3 className="relative z-10 text-2xl font-heading font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(`products.${product.key}`)}
                 </h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="relative z-10 text-muted-foreground mb-6">
                   {t(`products.${product.key}.desc`)}
                 </p>
                 <ul className="space-y-2 mb-6">
