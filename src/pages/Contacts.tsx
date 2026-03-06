@@ -92,7 +92,7 @@ const Contacts = () => {
               {/* Map Placeholder */}
               <div className="aspect-[4/3] rounded-2xl bg-muted overflow-hidden border border-border">
               <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.8!2d69.1950!3d40.2220!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b2a99d0b4c9c9d%3A0x5c4d8e9f0a1b2c3d!2sUzmetkombinat%2C%20Bekabad!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.8!2d69.2189!3d40.2214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z67MR%2BMM+Bekobod!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
