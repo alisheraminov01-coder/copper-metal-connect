@@ -7,6 +7,7 @@ import copperStripsBg from '@/assets/copper-strips-bg.jpg';
 import brassSheetsBg from '@/assets/brass-sheets-bg.jpg';
 import brassFoilBg from '@/assets/brass-foil-bg.jpg';
 import copperSheetsBg from '@/assets/copper-sheets-bg.jpg';
+import copperFoilBg from '@/assets/copper-foil-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
@@ -93,6 +94,12 @@ const Products = () => {
                   <div
                     className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${copperStripsBg})` }}
+                  />
+                )}
+                {product.key === 'foil' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${copperFoilBg})` }}
                   />
                 )}
                 {product.key === 'brassFoil' && (
