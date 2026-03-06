@@ -96,6 +96,12 @@ const Products = () => {
                     style={{ backgroundImage: `url(${copperStripsBg})` }}
                   />
                 )}
+                {product.key === 'foil' && (
+                  <div
+                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    style={{ backgroundImage: `url(${copperFoilBg})` }}
+                  />
+                )}
                 {product.key === 'brassFoil' && (
                   <div
                     className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
