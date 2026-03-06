@@ -74,37 +74,37 @@ const Products = () => {
               >
                 {product.key === 'sheets' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${copperSheetsBg})` }}
                   />
                 )}
                 {product.key === 'brassStrips' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${brassStripsBg})` }}
                   />
                 )}
                 {product.key === 'brassSheets' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${brassSheetsBg})` }}
                   />
                 )}
                 {product.key === 'strips' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${copperStripsBg})` }}
                   />
                 )}
                 {product.key === 'foil' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${copperFoilBg})` }}
                   />
                 )}
                 {product.key === 'brassFoil' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${brassFoilBg})` }}
                   />
                 )}
