@@ -7,6 +7,7 @@ import copperStripsBg from '@/assets/copper-strips-bg.jpg';
 import brassSheetsBg from '@/assets/brass-sheets-bg.jpg';
 import brassFoilBg from '@/assets/brass-foil-bg.jpg';
 import copperSheetsBg from '@/assets/copper-sheets-bg.jpg';
+import copperFoilBg from '@/assets/copper-foil-bg.jpg';
 
 const Products = () => {
   const { t } = useLanguage();
