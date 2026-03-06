@@ -74,7 +74,7 @@ const Products = () => {
               >
                 {product.key === 'sheets' && (
                   <div
-                    className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity duration-300"
+                    className="absolute inset-0 bg-cover bg-center opacity-30 group-hover:opacity-45 transition-opacity duration-300"
                     style={{ backgroundImage: `url(${copperSheetsBg})` }}
                   />
                 )}
