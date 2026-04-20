@@ -1,6 +1,9 @@
 import { Users, Target, Award, CheckCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import copperProductionImg from '@/assets/copper-production.jpg';
+import certificate1 from '@/assets/certificate-1.jpg';
+import certificate2 from '@/assets/certificate-2.jpg';
+import certificate3 from '@/assets/certificate-3.jpg';
 
 const About = () => {
   const { t } = useLanguage();
@@ -28,6 +31,12 @@ const About = () => {
     'ISO 14001:2015 Экологический менеджмент',
     'OHSAS 18001 Охрана труда',
     'Соответствие стандартам ГОСТ',
+  ];
+
+  const certificateImages = [
+    { src: certificate1, title: 'ISO 9001:2015' },
+    { src: certificate2, title: 'ISO 14001:2015' },
+    { src: certificate3, title: 'ГОСТ' },
   ];
 
   return (
@@ -77,10 +86,6 @@ const About = () => {
                 <div className="p-6 rounded-xl bg-muted">
                   <div className="text-4xl font-heading font-bold text-primary mb-2">20+</div>
                   <div className="text-sm text-muted-foreground">{t('about.products')}</div>
-                </div>
-                <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-lg font-heading font-bold text-primary mb-2">{t('about.hasCertificates')}</div>
-                  <div className="text-sm text-muted-foreground">{t('about.quality')}</div>
                 </div>
               </div>
             </div>
@@ -133,6 +138,33 @@ const About = () => {
             <p className="text-lg text-muted-foreground mb-12">
               Наша приверженность качеству подтверждена международно признанными сертификатами
             </p>
+
+            {/* Certificate Images */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              {certificateImages.map((cert, index) => (
+                <div
+                  key={index}
+                  className="group rounded-2xl overflow-hidden bg-card border border-border shadow-md hover:shadow-copper transition-all duration-300"
+                >
+                  <div className="aspect-[4/3] overflow-hidden bg-muted">
+                    <img
+                      src={cert.src}
+                      alt={`Сертификат ${cert.title}`}
+                      width={1024}
+                      height={768}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-base font-heading font-semibold text-foreground">
+                      {cert.title}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (
                 <div
