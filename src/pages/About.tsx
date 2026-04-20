@@ -35,6 +35,7 @@ const About = () => {
 
   const certificateImages = [
     { src: certificate1, title: 'O‘z DSt ISO 9001:2015' },
+    { src: certificate2, title: 'O‘z DSt ISO 45001:2020' },
   ];
 
   return (
@@ -138,11 +139,11 @@ const About = () => {
             </p>
 
             {/* Certificate Images */}
-            <div className="flex justify-center mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
               {certificateImages.map((cert, index) => (
                 <div
                   key={index}
-                  className="group rounded-2xl overflow-hidden bg-card border border-border shadow-md hover:shadow-copper transition-all duration-300 max-w-md w-full"
+                  className="group rounded-2xl overflow-hidden bg-card border border-border shadow-md hover:shadow-copper transition-all duration-300"
                 >
                   <div className="aspect-[3/4] overflow-hidden bg-muted">
                     <img
