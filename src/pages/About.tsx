@@ -34,9 +34,7 @@ const About = () => {
   ];
 
   const certificateImages = [
-    { src: certificate1, title: 'ISO 9001:2015' },
-    { src: certificate2, title: 'ISO 14001:2015' },
-    { src: certificate3, title: 'ГОСТ' },
+    { src: certificate1, title: 'O‘z DSt ISO 9001:2015' },
   ];
 
   return (
@@ -140,20 +138,20 @@ const About = () => {
             </p>
 
             {/* Certificate Images */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="flex justify-center mb-12">
               {certificateImages.map((cert, index) => (
                 <div
                   key={index}
-                  className="group rounded-2xl overflow-hidden bg-card border border-border shadow-md hover:shadow-copper transition-all duration-300"
+                  className="group rounded-2xl overflow-hidden bg-card border border-border shadow-md hover:shadow-copper transition-all duration-300 max-w-md w-full"
                 >
-                  <div className="aspect-[4/3] overflow-hidden bg-muted">
+                  <div className="aspect-[3/4] overflow-hidden bg-muted">
                     <img
                       src={cert.src}
                       alt={`Сертификат ${cert.title}`}
-                      width={1024}
-                      height={768}
+                      width={1654}
+                      height={2339}
                       loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-4">
