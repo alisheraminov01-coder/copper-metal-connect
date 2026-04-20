@@ -27,15 +27,16 @@ const About = () => {
   ];
 
   const certifications = [
-    'ISO 9001:2015 Система менеджмента качества',
-    'ISO 14001:2015 Экологический менеджмент',
-    'OHSAS 18001 Охрана труда',
-    'Соответствие стандартам ГОСТ',
+    'ISO 9001:2015 — Система менеджмента качества',
+    'ISO 45001:2018 — Охрана труда и безопасность',
+    'ISO 50001:2018 — Энергетический менеджмент',
+    'O‘z DSt — соответствие национальным стандартам',
   ];
 
   const certificateImages = [
     { src: certificate1, title: 'O‘z DSt ISO 9001:2015' },
     { src: certificate2, title: 'O‘z DSt ISO 45001:2020' },
+    { src: certificate3, title: 'O‘z DSt ISO 50001:2019' },
   ];
 
   return (
@@ -139,7 +140,7 @@ const About = () => {
             </p>
 
             {/* Certificate Images */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {certificateImages.map((cert, index) => (
                 <div
                   key={index}
