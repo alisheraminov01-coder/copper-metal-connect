@@ -83,7 +83,7 @@ const Index = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center pt-24 pb-48 md:pb-32 lg:pb-0 gradient-metal overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center pt-20 pb-32 md:pb-16 lg:pb-0 gradient-metal overflow-hidden">
         <div className="absolute inset-0 metal-texture opacity-50" />
         
         {/* Animated background elements */}
@@ -181,7 +181,7 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="container mx-auto px-4 py-4 md:py-6">
+          <div className="container mx-auto px-4 py-3 md:py-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {stats.map((stat, index) => (
                 <motion.div 
@@ -358,7 +358,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section with Form */}
-      <section className="py-14 md:py-24 gradient-metal relative overflow-hidden">
+      <section className="py-10 md:py-16 gradient-metal relative overflow-hidden">
         <div className="absolute inset-0 metal-texture opacity-30" />
         
         {/* Animated particles */}
