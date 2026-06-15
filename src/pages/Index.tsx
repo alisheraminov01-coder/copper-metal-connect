@@ -83,7 +83,7 @@ const Index = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center gradient-metal overflow-hidden">
+      <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center pt-24 pb-48 md:pb-32 lg:pb-0 gradient-metal overflow-hidden">
         <div className="absolute inset-0 metal-texture opacity-50" />
         
         {/* Animated background elements */}
@@ -133,14 +133,14 @@ const Index = () => {
             
             <motion.h1 
               variants={itemVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 leading-tight"
             >
               {t('hero.title')}
             </motion.h1>
             
             <motion.p 
               variants={itemVariants}
-              className="text-xl text-copper-300 mb-8 leading-relaxed max-w-2xl"
+              className="text-base sm:text-lg md:text-xl text-copper-300 mb-8 leading-relaxed max-w-2xl"
             >
               {t('hero.subtitle')}
             </motion.p>
@@ -181,8 +181,8 @@ const Index = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="container mx-auto px-4 py-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="container mx-auto px-4 py-4 md:py-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {stats.map((stat, index) => (
                 <motion.div 
                   key={index} 
@@ -192,12 +192,12 @@ const Index = () => {
                   transition={{ delay: 1 + index * 0.1, duration: 0.5 }}
                 >
                   <motion.div 
-                    className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1"
+                    className="text-2xl md:text-4xl font-heading font-bold text-primary mb-1"
                     whileHover={{ scale: 1.1 }}
                   >
                     {stat.value}
                   </motion.div>
-                  <div className="text-sm text-copper-300">{stat.label}</div>
+                  <div className="text-xs md:text-sm text-copper-300">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -206,7 +206,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
+      <section className="py-14 md:py-24 bg-background relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-5">
           <div className="absolute inset-0 bg-gradient-to-l from-primary to-transparent" />
@@ -272,7 +272,7 @@ const Index = () => {
       </section>
 
       {/* Products Preview */}
-      <section className="py-24 bg-muted relative overflow-hidden">
+      <section className="py-14 md:py-24 bg-muted relative overflow-hidden">
         {/* Animated background */}
         <motion.div 
           className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-primary/5 blur-3xl"
@@ -358,7 +358,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section with Form */}
-      <section className="py-24 gradient-metal relative overflow-hidden">
+      <section className="py-14 md:py-24 gradient-metal relative overflow-hidden">
         <div className="absolute inset-0 metal-texture opacity-30" />
         
         {/* Animated particles */}
@@ -431,7 +431,7 @@ const Index = () => {
               variants={scaleVariants}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="bg-card/95 backdrop-blur-md rounded-2xl p-8 shadow-industrial border border-copper-700/30"
+              className="bg-card/95 backdrop-blur-md rounded-2xl p-5 sm:p-8 shadow-industrial border border-copper-700/30"
             >
               <ApplicationForm />
             </motion.div>

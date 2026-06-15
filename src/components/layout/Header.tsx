@@ -37,10 +37,10 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Logo" className="w-12 h-12 object-contain" />
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-heading font-bold text-primary-foreground">БЕКОБОД РМИЧК</h1>
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <img src={logo} alt="Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain shrink-0" />
+            <div className="min-w-0">
+              <h1 className="text-sm sm:text-lg font-heading font-bold text-primary-foreground truncate">БЕКОБОД РМИЧК</h1>
             </div>
           </Link>
 

@@ -35,14 +35,14 @@ const Contacts = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="py-20 gradient-metal relative">
+      <section className="py-14 md:py-20 gradient-metal relative">
         <div className="absolute inset-0 metal-texture opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
               {t('contacts.title')}
             </h1>
-            <p className="text-xl text-copper-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-copper-300 leading-relaxed">
               {t('contacts.subtitle')}
             </p>
           </div>
@@ -50,25 +50,25 @@ const Contacts = () => {
       </section>
 
       {/* Contact Content */}
-      <section className="py-20 bg-background">
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-heading font-bold text-foreground mb-8">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 md:mb-8">
                 {t('contacts.subtitle')}
               </h2>
               
-              <div className="space-y-6 mb-12">
+              <div className="space-y-4 md:space-y-6 mb-8 md:mb-12">
                 {contactInfo.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 p-6 rounded-xl bg-muted hover:bg-muted/80 transition-colors"
+                    className="flex items-start gap-4 p-4 md:p-6 rounded-xl bg-muted hover:bg-muted/80 transition-colors"
                   >
-                    <div className="w-12 h-12 rounded-xl gradient-copper flex items-center justify-center flex-shrink-0">
+                    <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl gradient-copper flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-6 h-6 text-secondary" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <h3 className="text-sm font-medium text-muted-foreground mb-1">
                         {item.title}
                       </h3>
@@ -77,12 +77,12 @@ const Contacts = () => {
                           href={item.link}
                           target={item.link.startsWith('http') ? '_blank' : undefined}
                           rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+                          className="text-base md:text-lg font-medium text-foreground hover:text-primary transition-colors break-words"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <span className="text-lg font-medium text-foreground">{item.value}</span>
+                        <span className="text-base md:text-lg font-medium text-foreground break-words">{item.value}</span>
                       )}
                     </div>
                   </div>
@@ -106,13 +106,13 @@ const Contacts = () => {
 
             {/* Contact Form */}
             <div>
-              <div className="sticky top-28">
-                <div className="p-8 rounded-2xl bg-card border border-border shadow-industrial">
+              <div className="lg:sticky lg:top-28">
+                <div className="p-5 sm:p-8 rounded-2xl bg-card border border-border shadow-industrial">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-10 h-10 rounded-lg gradient-copper flex items-center justify-center">
                       <Send className="w-5 h-5 text-secondary" />
                     </div>
-                    <h2 className="text-2xl font-heading font-bold text-foreground">
+                    <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground">
                       {t('form.title')}
                     </h2>
                   </div>
