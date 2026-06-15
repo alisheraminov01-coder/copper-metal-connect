@@ -48,14 +48,14 @@ const Products = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="py-20 gradient-metal relative">
+      <section className="py-14 md:py-20 gradient-metal relative">
         <div className="absolute inset-0 metal-texture opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
               {t('products.title')}
             </h1>
-            <p className="text-xl text-copper-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-copper-300 leading-relaxed">
               {t('products.subtitle')}
             </p>
           </div>
@@ -63,13 +63,13 @@ const Products = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {products.map((product, index) => (
               <div
                 key={product.key}
-                className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in relative overflow-hidden"
+                className="group p-6 md:p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in relative overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {product.key === 'sheets' && (
@@ -138,13 +138,13 @@ const Products = () => {
       </section>
 
       {/* Additional Info */}
-      <section className="py-20 bg-muted">
+      <section className="py-14 md:py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-heading font-bold text-foreground text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground text-center mb-10 md:mb-12">
               Стандарты производства
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="p-6 rounded-xl bg-card border border-border">
                 <h3 className="text-lg font-heading font-semibold text-foreground mb-4">
                   Марки меди
@@ -173,10 +173,10 @@ const Products = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 gradient-metal relative">
+      <section className="py-14 md:py-20 gradient-metal relative">
         <div className="absolute inset-0 metal-texture opacity-30" />
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-6">
             {t('products.custom.desc')}
           </h2>
           <p className="text-lg text-copper-300 mb-8 max-w-2xl mx-auto">

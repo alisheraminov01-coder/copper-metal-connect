@@ -36,14 +36,14 @@ const Vacancies = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="py-20 gradient-metal relative">
+      <section className="py-14 md:py-20 gradient-metal relative">
         <div className="absolute inset-0 metal-texture opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
               {t('vacancies.title')}
             </h1>
-            <p className="text-xl text-copper-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-copper-300 leading-relaxed">
               {t('vacancies.subtitle')}
             </p>
           </div>
@@ -51,18 +51,18 @@ const Vacancies = () => {
       </section>
 
       {/* Vacancies List */}
-      <section className="py-20 bg-background">
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-6">
             {vacancies.map((vacancy, index) => (
               <div
                 key={vacancy.key}
-                className="p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in"
+                className="p-5 sm:p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-copper animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-heading font-semibold text-foreground mb-2">
+                    <h3 className="text-xl md:text-2xl font-heading font-semibold text-foreground mb-2">
                       {t(`vacancies.${vacancy.key}`)}
                     </h3>
                     <p className="text-muted-foreground mb-4">
@@ -97,12 +97,12 @@ const Vacancies = () => {
                     </div>
                   </div>
 
-                  <div className="lg:text-right">
-                    <div className="text-xl font-heading font-bold text-primary mb-4">
+                  <div className="lg:text-right lg:shrink-0">
+                    <div className="text-lg md:text-xl font-heading font-bold text-primary mb-4">
                       {vacancy.salary}
                     </div>
-                    <Link to="/contacts">
-                      <Button className="gradient-copper text-secondary font-semibold">
+                    <Link to="/contacts" className="block">
+                      <Button className="w-full lg:w-auto gradient-copper text-secondary font-semibold">
                         {t('vacancies.apply')}
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>

@@ -42,14 +42,14 @@ const About = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="py-20 gradient-metal relative">
+      <section className="py-14 md:py-20 gradient-metal relative">
         <div className="absolute inset-0 metal-texture opacity-30" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-6">
               {t('about.title')}
             </h1>
-            <p className="text-xl text-copper-300 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-copper-300 leading-relaxed">
               {t('about.subtitle')}
             </p>
           </div>
@@ -57,9 +57,9 @@ const About = () => {
       </section>
 
       {/* About Content */}
-      <section className="py-20 bg-background">
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
                 {t('about.subtitle')}
@@ -74,17 +74,17 @@ const About = () => {
               </p>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 gap-6">
-                <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-4xl font-heading font-bold text-primary mb-2">15+</div>
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="p-4 md:p-6 rounded-xl bg-muted">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">15+</div>
                   <div className="text-sm text-muted-foreground">{t('about.experience')}</div>
                 </div>
-                <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-4xl font-heading font-bold text-primary mb-2">1500+</div>
+                <div className="p-4 md:p-6 rounded-xl bg-muted">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">1500+</div>
                   <div className="text-sm text-muted-foreground">{t('about.clients')}</div>
                 </div>
-                <div className="p-6 rounded-xl bg-muted">
-                  <div className="text-4xl font-heading font-bold text-primary mb-2">20+</div>
+                <div className="p-4 md:p-6 rounded-xl bg-muted">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">20+</div>
                   <div className="text-sm text-muted-foreground">{t('about.products')}</div>
                 </div>
               </div>
@@ -104,16 +104,16 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-muted">
+      <section className="py-14 md:py-20 bg-muted">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground text-center mb-12">
             Наши ценности
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
-                className="p-8 rounded-2xl bg-card border border-border text-center hover:shadow-copper transition-shadow"
+                className="p-6 md:p-8 rounded-2xl bg-card border border-border text-center hover:shadow-copper transition-shadow"
               >
                 <div className="w-16 h-16 mx-auto mb-6 rounded-xl gradient-copper flex items-center justify-center">
                   <value.icon className="w-8 h-8 text-secondary" />
@@ -129,7 +129,7 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-background">
+      <section className="py-14 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
